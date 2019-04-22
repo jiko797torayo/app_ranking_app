@@ -1,0 +1,8 @@
+<div>
+  <% @apps.each do |app| %>
+    <div>
+      <%= image_tag app[:cover_image] %>
+      <%= app[:title] %>
+    <div>
+  <% end %>
+</div>
