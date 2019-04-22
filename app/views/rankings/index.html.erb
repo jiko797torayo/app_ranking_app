@@ -1,7 +1,13 @@
 <div>
-  <% @apps.each do |app| %>
+  <% @countries.each do |country| %>
+    <%= link_to country.name, root_path(country: country.code) %>
+  <% end %>
+</div>
+<div>
+  <% @apps.each.with_index(1) do |app, i| %>
     <div>
       <%= image_tag app[:cover_image] %>
+      <%= i %>
       <%= app[:title] %>
     <div>
   <% end %>
