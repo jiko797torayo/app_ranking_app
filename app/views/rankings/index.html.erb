@@ -3,12 +3,17 @@
     <%= link_to country.name, root_path(country: country.code) %>
   <% end %>
 </div>
-<div>
-  <% @apps.each.with_index(1) do |app, i| %>
-    <div>
-      <%= image_tag app[:cover_image] %>
-      <%= i %>
-      <%= app[:title] %>
-    <div>
-  <% end %>
-</div>
+<section class='section'>
+  <div class='section-content'>
+    <% @apps.each.with_index(1) do |app, i| %>
+      <div class='app'>
+        <%= image_tag app[:cover_image] %>
+        <div class='rank'><%= i %></div>
+        <div class'info'>
+          <h3><%= app[:title] %></h3>
+          <h4><%= app[:category] %></h3>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</section>
