@@ -1,8 +1,33 @@
-.section {
-  .section-content {
-    width: 80%;
+.country {
+  width: 20vw;
+  height: 100vh;
+  float: left;
+  overflow: scroll;
+  a {
+    text-decoration: none;
+  }
+  a:link {
+    color: #000;
+  }
+  a:visited {
+    color: #000;
+  }
+  a:hover {
+    color: red;
+  }
+  a:active {
+    color: #000;
+  }
+}
+.ranking {
+  height: 100vh;
+  background: #fffff0;
+  float: left;
+  overflow: scroll;
+  .ranking-content {
+    width: 80vw;
     margin: 0 auto;
-    max-width: 500px;
+    // max-width: 500px;
     .app {
       display: flex;
       padding: 5px;
