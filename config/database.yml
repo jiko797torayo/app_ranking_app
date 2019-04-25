@@ -50,5 +50,9 @@ test:
 production:
   <<: *default
   database: app_ranking_app_production
-  username: app_ranking_app
-  password: <%= ENV['APP_RANKING_APP_DATABASE_PASSWORD'] %>
+  adapter:  mysql2
+  encoding: utf8
+  host:     <%= ENV['DB_HOST'] %>
+  username: <%= ENV['DB_USER'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
+
