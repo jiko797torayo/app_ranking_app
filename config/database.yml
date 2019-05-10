@@ -1,28 +1,23 @@
 default: &default
+  adapter: mysql2
+  encoding: utf8
   pool: 5
-  timeout: 5000
+  username: root
+  password:
+  socket: /tmp/mysql.sock
 
 development:
   <<: *default
-  database: jp_development
-  adapter:  mysql2
-  encoding: utf8
-  host:     localhost
-  username: root
+  database: app_ranking_app_development
 
 test:
   <<: *default
-  database: jp_test
-  adapter:  mysql2
-  encoding: utf8
-  host:     localhost
-  username: root
+  database: app_ranking_app_test
 
 production:
   <<: *default
-  database: app_ranking_app
-  adapter:  mysql2
-  encoding: utf8
-  host:     <%= ENV['DB_HOST'] %>
-  username: <%= ENV['DB_USER'] %>
-  password: <%= ENV['DB_PASSWORD'] %>
+  database: app_ranking_app_production
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket:   /var/lib/mysql/mysql.sock
+
