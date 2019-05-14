@@ -1,10 +1,15 @@
-<section class='country'>
+<header>
+  <h1>LOGO</h1>
+</header>
+
+<aside class='country'>
   <div class='country-content'>
     <% @countries.each do |country| %>
       <%= link_to country.name, root_path(country: country.code) %>
     <% end %>
   </div>
-</section>
+</aside>
+
 <section class='ranking'>
   <div class='ranking-content'>
     <% @apps.each.with_index(1) do |app, i| %>
