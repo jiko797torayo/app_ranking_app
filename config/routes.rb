@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
-  resources :rankings, only: [:index, :show]
-  root to: 'rankings#index'
+  root to: 'rankings/free_apps#index'
+  namespace :rankings do
+    resources :free_apps, only: [:index]
+  end
 end
