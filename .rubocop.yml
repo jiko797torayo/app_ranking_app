@@ -11,6 +11,9 @@ AllCops:
     - features/**/*
     - spec/**/*
 
+Rails:
+  Enabled: true
+
 # １クラスの行数を200行以下に制限する
 Metrics/ClassLength:
   Max: 200
