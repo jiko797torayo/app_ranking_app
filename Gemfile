@@ -30,7 +30,6 @@ group :development do
   gem 'pry-doc'
   gem 'pry-byebug'
   gem 'pry-stack_explorer'
-
   gem 'capistrano'
   gem 'capistrano-rails'
   gem 'capistrano-bundler'
@@ -38,6 +37,9 @@ group :development do
   gem 'capistrano-rbenv', github: "capistrano/rbenv"
   gem 'capistrano-rails-console', require: false
   gem 'capistrano-slackify', require: false
+  gem 'rubocop', require: false
+  gem 'pre-commit', require: false
+  gem 'rubocop-performance'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
