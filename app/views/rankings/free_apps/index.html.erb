@@ -1,34 +1,28 @@
 <aside class='sidebar'>
   <div class='sidebar-logo'>
-    <%= image_tag 'ara.png', class: 'logo' %>
+    <%= image_tag 'ara.png', class: 'sidebar-logo__image' %>
   </div>
-  <div class='sidebar-content'>
+  <div class='sidebar-list'>
     <% @countries.each do |country| %>
       <p>
-        <%= link_to country.name, root_path(country: country.code), class: 'blueash' %>
+        <%= link_to country.name, root_path(country: country.code), class: 'sidebar-list__country-name' %>
       </p>
     <% end %>
   </div>
 </aside>
 
 <section class='ranking'>
-  <div class='content'>
-    <div class='header'>
-      <h1>Free App Ranking</h1>
-    </div>
-    <div class='apps'>
-      <% @apps.each.with_index(1) do |app, i| %>
-        <div class='apps-content'>
-          <div class='app'>
-            <div class='rank'><%= i %></div>
-            <%= image_tag app[:cover_image] %>
-          </div>
-          <div class='info'>
-            <h3><%= app[:title].truncate(16) %></h3>
-            <h4><%= app[:category] %></h3>
-          </div>
-        </div>
-      <% end %>
-    </div>
+  <div class='ranking-header'>
+    <h1>Free App Ranking</h1>
+  </div>
+  <div class='ranking-content'>
+    <% @apps.each.with_index(1) do |app, i| %>
+      <div class='ranking-item'>
+        <div class='ranking-item__rank'><%= i %></div>
+        <%= image_tag app[:cover_image], class: 'ranking-item__image' %>
+        <p class='ranking-item__title'><%= app[:title].truncate(16) %></p>
+        <p class='ranking-item__category'><%= app[:category] %></p>
+      </div>
+    <% end %>
   </div>
 </section>

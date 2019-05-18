@@ -1,34 +1,28 @@
-aside {
+.sidebar {
   width: 230px;
   height: 100vh;
   float: left;
   overflow: scroll;
   border: solid 1px $whiteash;
+}
+.sidebar-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  &__image {
+    width: 80px;
+  }
+}
+.sidebar-list {
+  padding-left: 20px;
   a {
     text-decoration: none;
   }
-  a:link {
+  a:link, a:visited {
     color: $blueash;
   }
-  a:visited {
-    color: $blueash;
-  }
-  a:hover {
+  a:hover, a:active {
     color: red;
-  }
-  a:active {
-    color: red;
-  }
-  .sidebar-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    .logo {
-      width: 80px;
-    }
-  }
-  .sidebar-content {
-    padding-left: 20px;
   }
 }
