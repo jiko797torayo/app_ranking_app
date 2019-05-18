@@ -1,12 +1,15 @@
 AllCops:
-  RunRailsCops: true
   Exclude:
     - bin/**/*
-    - config/boot.rb
-    - db/schema.rb
+    - config/**/*
+    - db/**/*
     - script/**/*
     - tmp/**/*
     - vendor/**/*
+    - lib/**/*
+    - Gemfile
+    - features/**/*
+    - spec/**/*
 
 # １クラスの行数を200行以下に制限する
 Metrics/ClassLength:
