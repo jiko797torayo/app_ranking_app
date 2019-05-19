@@ -1,4 +1,5 @@
 class RankingsController < ApplicationController
+  require 'net/http'
   layout 'rankings'
 
   def get_app_ranking_data(country:, type:, limit:)
