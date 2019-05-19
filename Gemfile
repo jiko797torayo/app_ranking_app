@@ -15,6 +15,7 @@ gem 'mini_racer', platforms: :ruby
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'bootstrap-sass'
+gem 'turbolinks'
 
 group :development, :test do
   gem 'rspec-rails'
