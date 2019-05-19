@@ -42,3 +42,8 @@ Style/ClassAndModuleChildren:
 # FrozenStringLiteralCommentを無視
 Style/FrozenStringLiteralComment:
   Enabled: false
+
+# ABC sizeの設定
+Metrics/AbcSize:
+  Enabled: true
+  Max: 17
