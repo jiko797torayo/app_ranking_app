@@ -38,3 +38,7 @@ Style/Documentation:
 # class Hoge::Fooのような記述を許す
 Style/ClassAndModuleChildren:
   Enabled: false
+
+# FrozenStringLiteralCommentを無視
+Style/FrozenStringLiteralComment:
+  Enabled: false
