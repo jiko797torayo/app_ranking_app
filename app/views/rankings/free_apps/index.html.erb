@@ -13,7 +13,13 @@
 
 <section class='ranking'>
   <div class='ranking-header'>
-    <h1>Free App Ranking</h1>
+    <p class='ranking-header__title'>
+      Free App Ranking
+      <%= link_to root_path(country: @current_country, format: :csv), class: 'ranking-header-btn' do %>
+        <span class='ranking-header-btn__text'>csv</span>
+        <i class="fas fa-file-download"></i>
+      <% end %>
+    </p>
   </div>
   <div class='ranking-content'>
     <% @apps.each.with_index(1) do |app, i| %>
