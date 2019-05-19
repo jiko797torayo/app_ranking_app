@@ -1,3 +1,2 @@
 class Country < ApplicationRecord
 end
-

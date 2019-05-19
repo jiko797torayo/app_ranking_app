@@ -19,9 +19,9 @@
     <% @apps.each.with_index(1) do |app, i| %>
       <div class='ranking-item'>
         <div class='ranking-item__rank'><%= i %></div>
-        <%= image_tag app[:cover_image], class: 'ranking-item__image' %>
-        <p class='ranking-item__title'><%= app[:title].truncate(16) %></p>
-        <p class='ranking-item__category'><%= app[:category] %></p>
+        <%= image_tag app['artworkUrl100'], class: 'ranking-item__image' %>
+        <p class='ranking-item__title'><%= app['name'].truncate(16) %></p>
+        <p class='ranking-item__category'><%= app['genres'][0]['name'] %></p>
       </div>
     <% end %>
   </div>
