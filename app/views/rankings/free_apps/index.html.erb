@@ -20,7 +20,7 @@
       <div class='ranking-item'>
         <div class='ranking-item__rank'><%= i %></div>
         <%= image_tag app['artworkUrl100'], class: 'ranking-item__image' %>
-        <p class='ranking-item__title'><%= app['name'].truncate(16) %></p>
+        <p class='ranking-item__title'><%= app['name'] %></p>
         <p class='ranking-item__category'><%= app['genres'][0]['name'] %></p>
       </div>
     <% end %>
