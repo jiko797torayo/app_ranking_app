@@ -25,4 +25,9 @@
   a:hover, a:active {
     color: red;
   }
+  &__country-image {
+    width: 18px;
+    height: 21px;
+    padding-bottom: 3px;
+  }
 }
