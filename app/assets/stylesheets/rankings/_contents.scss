@@ -17,6 +17,7 @@
   }
 }
 .ranking-header-btn {
+  position:relative;
   color: $royalblue;
   padding-left: 10px;
   &:hover {
@@ -24,17 +25,16 @@
     text-decoration: none;
   }
   &__text {
-    position: relative;
-    top: -24px;
+    position: absolute;
     font-size: 10px;
     line-height: 10px;
+    padding-top: 25px;
   }
 }
 .fa-file-download {
+  position: absolute;
   font-size: 25px;
-  position: relative;
-  top: 0;
-  left: -28px;
+  padding-top: 36px;
 }
 .ranking-content {
   margin: 0 auto;

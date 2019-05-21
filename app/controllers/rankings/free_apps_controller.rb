@@ -4,7 +4,7 @@ class Rankings::FreeAppsController < RankingsController
     respond_to do |format|
       format.html do
         @countries = Country.all.order(name: :asc)
-        @current_country = params[:country]
+        @current_country = params[:country] || 'US'
       end
       format.csv do
         file_name = File.basename("#{Time.zone.today.strftime('%Y%m%d')}_free_apps_ranking")

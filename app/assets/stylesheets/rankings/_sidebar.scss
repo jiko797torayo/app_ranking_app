@@ -15,15 +15,24 @@
   }
 }
 .sidebar-list {
-  padding-left: 20px;
   a {
+    padding-left: 20px;
     text-decoration: none;
-  }
-  a:link, a:visited {
-    color: $blueash;
+    font-size: 12px;
   }
   a:hover, a:active {
     color: red;
+  }
+  &__outer-current {
+    background: $royalblue;
+    a:link, a:visited {
+      color: white;
+    }
+  }
+  &__outer {
+    a:link, a:visited {
+      color: $blueash;
+    }
   }
   &__country-image {
     width: 18px;
