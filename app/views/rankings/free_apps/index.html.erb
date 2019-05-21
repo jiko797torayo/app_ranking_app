@@ -5,7 +5,10 @@
   <div class='sidebar-list'>
     <% @countries.each do |country| %>
       <p>
-        <%= link_to country.name, root_path(country: country.code), class: 'sidebar-list__country-name' %>
+        <%= link_to root_path(country: country.code), class: 'sidebar-list__country-name' do %>
+          <%= image_tag "flags/#{country.code}.png", class: 'sidebar-list__country-image' %>
+          <span><%= country.name %></span>
+        <% end %>
       </p>
     <% end %>
   </div>
