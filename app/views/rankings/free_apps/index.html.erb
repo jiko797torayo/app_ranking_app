@@ -37,7 +37,9 @@
     <% @apps.each.with_index(1) do |app, i| %>
       <div class='ranking-item'>
         <div class='ranking-item__rank'><%= i %></div>
-        <%= image_tag app['artworkUrl100'], class: 'ranking-item__image' %>
+        <%= link_to app['url'], target: '_blank' do %>
+          <%= image_tag app['artworkUrl100'], class: 'ranking-item__image' %>
+        <% end %>
         <p class='ranking-item__title'><%= app['name'] %></p>
         <p class='ranking-item__category'><%= app['genres'][0]['name'] %></p>
       </div>
