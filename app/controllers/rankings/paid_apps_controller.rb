@@ -1,6 +1,6 @@
-class Rankings::FreeAppsController < RankingsController
+class Rankings::PaidAppsController < RankingsController
   def index
-    @apps = get_app_ranking_data(country: params[:country], type: 'top-free', limit: 200)
+    @apps = get_app_ranking_data(country: params[:country], type: 'top-paid', limit: 200)
     respond_to do |format|
       format.html do
         @countries = Country.all.order(name: :asc)

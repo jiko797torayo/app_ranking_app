@@ -46,4 +46,4 @@ Style/FrozenStringLiteralComment:
 # ABC sizeの設定
 Metrics/AbcSize:
   Enabled: true
-  Max: 17
+  Max: 18

@@ -1,0 +1,16 @@
+<div class='ranking-header'>
+  <div class='ranking-header-link'>
+    <i class='fas fa-sort-down'></i>
+    <ul class='ranking-header-link__list'>
+      <li class='ranking-header-link__item'>Free App Ranking</li>
+      <li class='ranking-header-link__item'>Paid App Ranking</li>
+    </ul>
+  </div>
+  <p class='ranking-header__title'>
+    <%= "#{controller.controller_name.titleize} Ranking" %>
+    <%= link_to root_path(country: current_country, format: :csv), class: 'ranking-header-btn' do %>
+      <i class="fas fa-file-download"></i>
+      <span class='ranking-header-btn__text'>csv</span>
+    <% end %>
+  </p>
+</div>
