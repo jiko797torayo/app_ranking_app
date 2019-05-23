@@ -8,7 +8,7 @@
   </div>
   <p class='ranking-header__title'>
     <%= "#{controller.controller_name.titleize} Ranking" %>
-    <%= link_to root_path(country: current_country, format: :csv), class: 'ranking-header-btn' do %>
+    <%= link_to public_send("rankings_#{controller.controller_name}_path", country: current_country, format: :csv), class: 'ranking-header-btn' do %>
       <i class="fas fa-file-download"></i>
       <span class='ranking-header-btn__text'>csv</span>
     <% end %>
