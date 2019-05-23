@@ -38,8 +38,16 @@
   &__item {
     background: white;
     border: solid 1px $whiteash;
-    color: $blueash;
     padding: 5px;
+    a {
+      text-decoration: none;
+    }
+    a:link, a:visited {
+      color: $blueash;
+    }
+    a:hover, a:active {
+      color: red;
+    }
   }
 }
 .ranking-header-btn {
