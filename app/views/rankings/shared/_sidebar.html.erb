@@ -1,0 +1,24 @@
+<aside class='sidebar'>
+  <div class='sidebar-logo'>
+    <%= image_tag 'ara.png', class: 'sidebar-logo__image' %>
+  </div>
+  <div class='sidebar-list'>
+    <% countries.each do |country| %>
+      <% if country.code == current_country %>
+        <p class='sidebar-list__outer-current'>
+          <%= link_to public_send("rankings_#{controller.controller_name}_path", country: country.code), class: 'sidebar-list__country-name' do %>
+            <%= image_tag "flags/#{country.code}.png", class: 'sidebar-list__country-image' %>
+            <span><%= country.name %></span>
+          <% end %>
+        </p>
+      <% else %>
+        <p class='sidebar-list__outer'>
+          <%= link_to public_send("rankings_#{controller.controller_name}_path", country: country.code), class: 'sidebar-list__country-name' do %>
+            <%= image_tag "flags/#{country.code}.png", class: 'sidebar-list__country-image' %>
+            <span><%= country.name %></span>
+          <% end %>
+        </p>
+      <% end %>
+    <% end %>
+  </div>
+</aside>

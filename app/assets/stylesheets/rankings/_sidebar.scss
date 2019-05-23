@@ -20,9 +20,6 @@
     text-decoration: none;
     font-size: 12px;
   }
-  a:hover, a:active {
-    color: red;
-  }
   &__outer-current {
     background: $royalblue;
     a:link, a:visited {
@@ -32,6 +29,9 @@
   &__outer {
     a:link, a:visited {
       color: $blueash;
+    }
+    a:hover, a:active {
+      color: red;
     }
   }
   &__country-image {
