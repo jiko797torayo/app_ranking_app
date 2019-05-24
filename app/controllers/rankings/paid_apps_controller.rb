@@ -8,7 +8,7 @@ class Rankings::PaidAppsController < RankingsController
       end
       format.csv do
         file_name = File.basename("#{Time.zone.today.strftime('%Y%m%d')}_#{controller_name}_ranking")
-        send_data @products.make_ranking_csv,
+        send_data @products.make_ranking_csv(controller_name),
                   type: 'text/csv; charset=shift_jis',
                   filename: file_name
       end
