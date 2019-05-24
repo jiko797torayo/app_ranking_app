@@ -3,15 +3,18 @@
     <i class='fas fa-sort-down' id='fa-sort-down'></i>
     <ul class='ranking-header-link__list hidden' id='ranking-header-link__list'>
       <li class='ranking-header-link__item'>
-        <%= link_to 'Free Apps Ranking', rankings_free_apps_path(country: current_country) %>
+        <%= link_to Settings.ranking.free_apps.title, rankings_free_apps_path(country: current_country) %>
       </li>
       <li class='ranking-header-link__item'>
-        <%= link_to 'Paid Apps Ranking', rankings_paid_apps_path(country: current_country) %>
+        <%= link_to Settings.ranking.paid_apps.title, rankings_paid_apps_path(country: current_country) %>
+      </li>
+      <li class='ranking-header-link__item'>
+        <%= link_to Settings.ranking.itunes_musics.title, rankings_itunes_musics_path(country: current_country) %>
       </li>
     </ul>
   </div>
   <p class='ranking-header__title'>
-    <%= "#{controller.controller_name.titleize} Ranking" %>
+    <%= Settings.ranking.public_send(controller.controller_name).title %>
     <%= link_to public_send("rankings_#{controller.controller_name}_path", country: current_country, format: :csv), class: 'ranking-header-btn' do %>
       <i class="fas fa-file-download"></i>
       <span class='ranking-header-btn__text'>csv</span>
