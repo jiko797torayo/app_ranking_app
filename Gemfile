@@ -17,6 +17,7 @@ gem 'jquery-ui-rails'
 gem 'bootstrap-sass'
 gem 'turbolinks'
 gem 'font-awesome-sass'
+gem 'config'
 
 group :development, :test do
   gem 'rspec-rails'

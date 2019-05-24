@@ -1,0 +1,7 @@
+ranking:
+  free_apps:
+    title: 'Free Apps Ranking'
+  paid_apps:
+    title: 'Paid Apps Ranking'
+  itunes_musics:
+    title: 'iTunes Musics Ranking'
