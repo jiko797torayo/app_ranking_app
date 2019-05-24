@@ -1,6 +1,6 @@
-class Rankings::PaidAppsController < RankingsController
+class Rankings::ItunesMusicsController < RankingsController
   def index
-    @products = get_products_ranking_data(country: params[:country], product: 'ios-apps', type: 'top-paid', limit: 200)
+    @products = get_products_ranking_data(country: params[:country], product: 'itunes-music', type: 'top-songs', limit: 200)
     respond_to do |format|
       format.html do
         @countries = Country.all.order(name: :asc)
