@@ -3,5 +3,5 @@ ranking:
     title: 'Free Apps Ranking'
   paid_apps:
     title: 'Paid Apps Ranking'
-  itunes_musics:
-    title: 'iTunes Musics Ranking'
+  itunes_music:
+    title: 'iTunes Music Ranking'

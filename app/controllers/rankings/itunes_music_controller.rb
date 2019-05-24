@@ -1,4 +1,4 @@
-class Rankings::ItunesMusicsController < RankingsController
+class Rankings::ItunesMusicController < RankingsController
   def index
     @products = get_products_ranking_data(country: params[:country], product: 'itunes-music', type: 'top-songs', limit: 200)
     respond_to do |format|
