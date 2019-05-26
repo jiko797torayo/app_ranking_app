@@ -1,17 +1,17 @@
 require 'csv'
 module CsvCommonModule
   extend ActiveSupport::Concern
-  def make_ranking_csv(controller_name)
-    case controller_name
+  def make_ranking_csv(product)
+    case product
     when 'free_apps', 'paid_apps'
       CSV.generate do |csv|
         column_names = %w[rank app_name category]
         csv << column_names
-        each.with_index(1) do |product, i|
+        each.with_index(1) do |p, i|
           column_values = [
             i,
-            product['name'],
-            product['genres'][0]['name']
+            p['name'],
+            p['genres'][0]['name']
           ]
           csv << column_values
         end
@@ -20,11 +20,11 @@ module CsvCommonModule
       CSV.generate do |csv|
         column_names = %w[rank music_name artist_name]
         csv << column_names
-        each.with_index(1) do |product, i|
+        each.with_index(1) do |p, i|
           column_values = [
             i,
-            product['name'],
-            product['artistName']
+            p['name'],
+            p['artistName']
           ]
           csv << column_values
         end
