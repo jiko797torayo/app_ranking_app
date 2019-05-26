@@ -7,3 +7,6 @@ rankings:
   itunes_music:
     top_songs:
       title: 'iTunes Music Top Songs Ranking'
+  apple_music:
+    top_songs:
+      title: 'Apple Music Top Songs Ranking'

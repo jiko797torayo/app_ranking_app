@@ -11,6 +11,9 @@
       <li class='ranking-header-link__item'>
         <%= link_to Settings.rankings.itunes_music.top_songs.title, rankings_path(country: current_country, product: 'itunes-music', type: 'top-songs') %>
       </li>
+      <li class='ranking-header-link__item'>
+        <%= link_to Settings.rankings.apple_music.top_songs.title, rankings_path(country: current_country, product: 'apple-music', type: 'top-songs') %>
+      </li>
     </ul>
   </div>
   <p class='ranking-header__title'>
