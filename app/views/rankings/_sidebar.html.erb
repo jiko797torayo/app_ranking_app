@@ -1,7 +1,8 @@
 <aside class='sidebar'>
-  <div class='sidebar-logo'>
+  <%= link_to root_path, class: 'sidebar-logo' do %>
     <%= image_tag 'ara.png', class: 'sidebar-logo__image' %>
-  </div>
+    <p class='sidebar-logo__name'>App Ranking App</p>
+  <% end %>
   <div class='sidebar-list'>
     <% countries.each do |country| %>
       <% if country.code == current_country %>
