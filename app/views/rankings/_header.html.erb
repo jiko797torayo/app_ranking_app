@@ -23,6 +23,9 @@
       <li class='ranking-header-link__item'>
         <%= link_to Settings.rankings.books.top_paid.title, rankings_path(country: current_country, product: 'books', type: 'top-paid') %>
       </li>
+      <li class='ranking-header-link__item'>
+        <%= link_to Settings.rankings.movies.top_movies.title, rankings_path(country: current_country, product: 'movies', type: 'top-movies') %>
+      </li>
     </ul>
   </div>
   <p class='ranking-header__title'>
