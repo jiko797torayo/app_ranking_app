@@ -1,12 +1,18 @@
 <div class='ranking-content'>
-  <% products.each.with_index(1) do |product, i| %>
-    <div class='ranking-item'>
-      <div class='ranking-item__rank'><%= i %></div>
-      <%= link_to product['url'], target: '_blank' do %>
-        <%= image_tag product['artworkUrl100'], class: 'ranking-item__image' %>
-      <% end %>
-      <p class='ranking-item__title'><%= product['name'] %></p>
-      <p class='ranking-item__category'><%= product_info(current_product, product) %></p>
-    </div>
+  <% if products.present? %>
+    <% products.each.with_index(1) do |product, i| %>
+      <div class='ranking-item'>
+        <div class='ranking-item__rank'><%= i %></div>
+        <%= link_to product['url'], target: '_blank' do %>
+          <%= image_tag product['artworkUrl100'], class: 'ranking-item__image' %>
+        <% end %>
+        <p class='ranking-item__title'><%= product['name'] %></p>
+        <p class='ranking-item__category'><%= product_info(current_product, product) %></p>
+      </div>
+    <% end %>
+  <% else %>
+    <p class='ranking-content__failed-message'>
+      Sorry, can't get data for this country.
+    </p>
   <% end %>
 </div>
