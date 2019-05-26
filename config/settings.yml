@@ -10,3 +10,6 @@ rankings:
   apple_music:
     top_songs:
       title: 'Apple Music Top Songs Ranking'
+  audiobooks:
+    top_audiobooks:
+      title: 'Audiobooks Top Audiobooks Ranking'
