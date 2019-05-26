@@ -13,3 +13,8 @@ rankings:
   audiobooks:
     top_audiobooks:
       title: 'Audiobooks Top Audiobooks Ranking'
+  books:
+    top_free:
+      title: 'Books Top Free Ranking'
+    top_paid:
+      title: 'Books Top Paid Ranking'
