@@ -74,6 +74,10 @@
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  &__failed-message {
+    padding: 5px;
+    color: $blueash;
+  }
 }
 .ranking-item {
   background: white;
