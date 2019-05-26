@@ -17,6 +17,12 @@
       <li class='ranking-header-link__item'>
         <%= link_to Settings.rankings.audiobooks.top_audiobooks.title, rankings_path(country: current_country, product: 'audiobooks', type: 'top-audiobooks') %>
       </li>
+      <li class='ranking-header-link__item'>
+        <%= link_to Settings.rankings.books.top_free.title, rankings_path(country: current_country, product: 'books', type: 'top-free') %>
+      </li>
+      <li class='ranking-header-link__item'>
+        <%= link_to Settings.rankings.books.top_paid.title, rankings_path(country: current_country, product: 'books', type: 'top-paid') %>
+      </li>
     </ul>
   </div>
   <p class='ranking-header__title'>
