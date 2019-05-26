@@ -18,3 +18,6 @@ rankings:
       title: 'Books Top Free Ranking'
     top_paid:
       title: 'Books Top Paid Ranking'
+  movies:
+    top_movies:
+      title: 'Movies Top Movies Ranking'
