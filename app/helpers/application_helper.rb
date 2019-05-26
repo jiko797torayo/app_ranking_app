@@ -3,7 +3,7 @@ module ApplicationHelper
     case controller.controller_name
     when 'free_apps', 'paid_apps'
       product['genres'][0]['name']
-    when 'itunes_musics'
+    when 'itunes_music'
       product['artistName']
     end
   end
