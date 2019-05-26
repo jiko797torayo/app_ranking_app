@@ -1,9 +1,9 @@
 require 'csv'
 module CsvCommonModule
   extend ActiveSupport::Concern
-  def make_ranking_csv(product)
-    case product
-    when 'free_apps', 'paid_apps'
+  def make_ranking_csv(current_product)
+    case current_product
+    when 'ios-apps'
       CSV.generate do |csv|
         column_names = %w[rank app_name category]
         csv << column_names
@@ -16,7 +16,7 @@ module CsvCommonModule
           csv << column_values
         end
       end
-    when 'itunes_musics'
+    when 'itunes-music'
       CSV.generate do |csv|
         column_names = %w[rank music_name artist_name]
         csv << column_names
