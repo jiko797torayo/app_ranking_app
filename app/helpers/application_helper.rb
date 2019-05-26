@@ -3,7 +3,7 @@ module ApplicationHelper
     case current_product
     when 'ios-apps', 'movies'
       product['genres'][0]['name']
-    when 'itunes-music', 'apple-music', 'audiobooks', 'books'
+    when 'itunes-music', 'apple-music', 'audiobooks', 'books', 'itunes-u'
       product['artistName']
     end
   end

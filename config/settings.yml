@@ -21,3 +21,6 @@ rankings:
   movies:
     top_movies:
       title: 'Movies Top Movies Ranking'
+  itunes_u:
+    top_itunes_u_courses:
+      title: 'iTunes U Top iTunes U Courses Ranking'
