@@ -1,9 +1,9 @@
 module ApplicationHelper
-  def product_info(product)
-    case controller.controller_name
-    when 'free_apps', 'paid_apps'
+  def product_info(current_product, product)
+    case current_product
+    when 'ios-apps'
       product['genres'][0]['name']
-    when 'itunes_music'
+    when 'itunes-music'
       product['artistName']
     end
   end

@@ -1,0 +1,23 @@
+<div class='ranking-header'>
+  <div class='ranking-header-link'>
+    <i class='fas fa-sort-down' id='fa-sort-down'></i>
+    <ul class='ranking-header-link__list hidden' id='ranking-header-link__list'>
+      <li class='ranking-header-link__item'>
+        <%= link_to Settings.rankings.ios_apps.top_free.title, rankings_path(country: current_country, product: 'ios-apps', type: 'top-free') %>
+      </li>
+      <li class='ranking-header-link__item'>
+        <%= link_to Settings.rankings.ios_apps.top_paid.title, rankings_path(country: current_country, product: 'ios-apps', type: 'top-paid') %>
+      </li>
+      <li class='ranking-header-link__item'>
+        <%= link_to Settings.rankings.itunes_music.top_songs.title, rankings_path(country: current_country, product: 'itunes-music', type: 'top-songs') %>
+      </li>
+    </ul>
+  </div>
+  <p class='ranking-header__title'>
+    <%= Settings.rankings.public_send(current_product.underscore).public_send(current_type.underscore).title %>
+    <%= link_to rankings_path(country: current_country, product: current_product, type: current_type, format: :csv), class: 'ranking-header-btn' do %>
+      <i class="fas fa-file-download"></i>
+      <span class='ranking-header-btn__text'>csv</span>
+    <% end %>
+  </p>
+</div>

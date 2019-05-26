@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature 'Rankings::FreeApps', type: :feature do
+RSpec.feature 'Rankings', type: :feature do
   scenario 'ユーザーが各国のios無料アプリランキングのページを見る' do
     countries = Country.all
     countries.each do |country|
@@ -8,7 +8,7 @@ RSpec.feature 'Rankings::FreeApps', type: :feature do
       visit root_path
       expect(page).to have_selector 'p', text: country.name
       click_link country.name
-      expect(page).to have_selector 'h1', text: 'Free App Ranking'
+      expect(page).to have_selector 'p', text: Settings.rankings.ios_apps.top_free.title
     end
   end
 end

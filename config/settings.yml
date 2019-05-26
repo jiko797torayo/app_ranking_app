@@ -1,7 +1,9 @@
-ranking:
-  free_apps:
-    title: 'Free Apps Ranking'
-  paid_apps:
-    title: 'Paid Apps Ranking'
+rankings:
+  ios_apps:
+    top_free:
+      title: 'iOS Apps Top Free Ranking'
+    top_paid:
+      title: 'iOS Apps Top Paid Ranking'
   itunes_music:
-    title: 'iTunes Music Ranking'
+    top_songs:
+      title: 'iTunes Music Top Songs Ranking'
