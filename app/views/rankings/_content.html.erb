@@ -1,7 +1,11 @@
 <div class='ranking-content'>
   <% if products.present? %>
     <% products.each.with_index(1) do |product, i| %>
-      <div class='ranking-item'>
+      <% genres = [] %>
+      <% product['genres'].each do |genre| %>
+        <% genres << "genre-id-#{genre['genreId']}" %>
+      <% end %>
+      <div class="ranking-item <%= genres.join(' ') %>">
         <div class='ranking-item__rank'><%= i %></div>
         <%= link_to product['url'], target: '_blank' do %>
           <%= image_tag product['artworkUrl100'], class: 'ranking-item__image' %>
