@@ -20,8 +20,8 @@ ActiveRecord::Schema.define(version: 2019_05_30_130751) do
   end
 
   create_table "genres", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.integer "genre_number"
-    t.string "genre_name"
+    t.integer "number"
+    t.string "name"
     t.string "product"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
