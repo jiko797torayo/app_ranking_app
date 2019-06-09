@@ -1,54 +1,60 @@
-.ranking {
-  height: 100vh;
-  background: $bluewhite;
-  float: left;
-  overflow: scroll;
-  width: calc(100vw - 230px);
-  padding: 0 5px 0 30px;
-}
-.ranking-content {
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  &__failed-message {
-    padding: 5px;
-    color: $blueash;
+@media screen and (min-width:1025px){
+  .ranking {
+    height: 100vh;
+    background: $bluewhite;
+    float: left;
+    overflow: scroll;
+    width: calc(100vw - 230px);
+    padding: 0 5px 0 30px;
   }
-}
-.ranking-item {
-  background: white;
-  border-radius: 20px;
-  border: solid 1px $whiteash;
-  margin: 5px;
-  padding-bottom: 5px;
-  &__rank {
-    font-size: 10px;
-    padding: 10px 0 0 7px;
+  .ranking-content {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    &__failed-message {
+      padding: 5px;
+      color: $blueash;
+    }
   }
-  &__image {
-    margin: -5px 20px 5px 20px;
+  .ranking-item {
+    background: white;
     border-radius: 20px;
-    box-shadow: 0 4px 3px -2px rgba(0, 0, 0, 0.8);
-    width: 100px;
-    height: 100px;
-  }
-  &__title {
-    padding-left: 25px;
-    font-size: 10px;
-    font-weight: bold;
-    max-width: 140px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-  &__category {
-    padding-left: 25px;
-    font-size: 10px;
-    color: $blueash;
-    max-width: 140px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    border: solid 1px $whiteash;
+    margin: 5px;
+    padding-bottom: 5px;
+    &__rank {
+      font-size: 10px;
+      padding: 10px 0 0 7px;
+    }
+    &__image {
+      margin: -5px 20px 5px 20px;
+      border-radius: 20px;
+      box-shadow: 0 4px 3px -2px rgba(0, 0, 0, 0.8);
+      width: 100px;
+      height: 100px;
+    }
+    &__title {
+      padding-left: 25px;
+      font-size: 10px;
+      font-weight: bold;
+      max-width: 140px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    &__category {
+      padding-left: 25px;
+      font-size: 10px;
+      color: $blueash;
+      max-width: 140px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
   }
 }
-
+@media screen and (max-width:1024px) {
+  .ranking-content {
+    display: none;
+  }
+}

@@ -1,38 +1,144 @@
-.ranking-header {
-  height: 100px;
-  border-bottom: solid 1px $whiteash;
-  &__title {
-    color: black;
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 100px;
-    padding-left: 30px;
+@media screen and (min-width:1025px) {
+  .ranking-header {
+    height: 100px;
+    border-bottom: solid 1px $whiteash;
+    &__title {
+      color: black;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 100px;
+      padding-left: 30px;
+    }
   }
-}
-.ranking-header-link {
-  position: relative;
-  .fa-sort-down {
-    position: absolute;
-    margin-top: 30px;
-    font-size: 30px;
+  .ranking-header-logo {
+    display: none;
+  }
+  .ranking-header-country {
+    display: none;
+  }
+  .ranking-header-link {
+    position: relative;
+    .fa-sort-down {
+      position: absolute;
+      margin-top: 30px;
+      font-size: 30px;
+      &:hover {
+        opacity: 0.6;
+        cursor: pointer;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    &__list {
+      position: absolute;
+      margin-top: 60px;
+    }
+    &__item {
+      background: white;
+      border: solid 1px $whiteash;
+      padding: 5px;
+      a {
+        text-decoration: none;
+      }
+      a:link, a:visited {
+        color: $blueash;
+      }
+      a:hover, a:active {
+        color: red;
+      }
+    }
+  }
+  .ranking-header-btn {
+    position:relative;
+    color: $royalblue;
+    padding-left: 5px;
     &:hover {
       opacity: 0.6;
-      cursor: pointer;
-    }
-    &:focus {
-      outline: none;
-    }
-  }
-  &__list {
-    position: absolute;
-    margin-top: 60px;
-  }
-  &__item {
-    background: white;
-    border: solid 1px $whiteash;
-    padding: 5px;
-    a {
       text-decoration: none;
+    }
+    &__text {
+      position: absolute;
+      font-size: 10px;
+      line-height: 10px;
+      margin-top: 30px;
+    }
+  }
+  .fa-file-download {
+    position: absolute;
+    font-size: 20px;
+    margin-top: 41px;
+  }
+}
+@media screen and (max-width:1024px) {
+  .ranking-header {
+    height: 10vh;
+    &__title {
+      display: none;
+    }
+  }
+  .ranking-header-logo {
+    margin-left: 10px;
+    height: 10vh;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      opacity: 0.6;
+    }
+    &__image {
+      height: 8vh;
+    }
+  }
+  .ranking-header-country {
+    float: right;
+    height: 100%;
+    margin-right: 10px;
+    &__content {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__image {
+      float: right;
+      height: 6vh;
+      margin-right: 10px;
+    }
+    &__name {
+      float: right;
+      font-size: 4.5vh;
+      font-weight: bold;
+      color: $blueash;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .ranking-header-link {
+    display: none;
+    position: absolute;
+    top: 10vh;
+    height: 90vh;
+    width: 100%;
+    overflow: scroll;
+    border: solid 1px $whiteash;
+    background: $bluewhite;
+    .fa-sort-down {
+      display: none
+    }
+    &__list {
+      padding-top: 18px;
+    }
+    &__item {
+      padding: 20px 0;
+    }
+    a {
+      padding-left: 20px;
+      text-decoration: none;
+      font-size: 2vh;
     }
     a:link, a:visited {
       color: $blueash;
@@ -41,24 +147,4 @@
       color: red;
     }
   }
-}
-.ranking-header-btn {
-  position:relative;
-  color: $royalblue;
-  padding-left: 5px;
-  &:hover {
-    opacity: 0.6;
-    text-decoration: none;
-  }
-  &__text {
-    position: absolute;
-    font-size: 10px;
-    line-height: 10px;
-    margin-top: 30px;
-  }
-}
-.fa-file-download {
-  position: absolute;
-  font-size: 20px;
-  margin-top: 41px;
 }

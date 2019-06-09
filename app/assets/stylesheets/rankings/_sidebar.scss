@@ -1,53 +1,97 @@
-.sidebar {
-  position: relative;
-  width: 230px;
-  height: 100vh;
-  float: left;
-  overflow: scroll;
-  border: solid 1px $whiteash;
+@media screen and (min-width:1025px){
+  .sidebar {
+    position: relative;
+    width: 230px;
+    height: 100vh;
+    float: left;
+    overflow: scroll;
+    border: solid 1px $whiteash;
+  }
+  .sidebar-logo {
+    margin-left: 75px;
+    &:hover {
+      opacity: 0.6;
+    }
+    &__image {
+      width: 80px;
+    }
+    &__name {
+      position: absolute;
+      top: 78px;
+      left: 58px;
+      text-align: center;
+      font-size: 12px;
+      font-weight: bold;
+      color: $royalblue;
+    }
+  }
+  .sidebar-list {
+    padding-top: 18px;
+    a {
+      padding-left: 20px;
+      text-decoration: none;
+      font-size: 12px;
+    }
+    &__outer-current {
+      background: $royalblue;
+      a:link, a:visited {
+        color: white;
+      }
+    }
+    &__outer {
+      a:link, a:visited {
+        color: $blueash;
+      }
+      a:hover, a:active {
+        color: red;
+      }
+    }
+    &__country-image {
+      width: 18px;
+      height: 21px;
+      padding-bottom: 3px;
+    }
+  }
 }
-.sidebar-logo {
-  margin-left: 75px;
-  &:hover {
-    opacity: 0.6;
-  }
-  &__image {
-    width: 80px;
-  }
-  &__name {
+@media screen and (max-width:1024px) {
+  .sidebar {
+    display: none;
     position: absolute;
-    top: 78px;
-    left: 58px;
-    text-align: center;
-    font-size: 12px;
-    font-weight: bold;
-    color: $royalblue;
+    top: 10vh;
+    height: 90vh;
+    width: 100%;
+    overflow: scroll;
+    border: solid 1px $whiteash;
+    background: $bluewhite;
   }
-}
-.sidebar-list {
-  padding-top: 18px;
-  a {
-    padding-left: 20px;
-    text-decoration: none;
-    font-size: 12px;
+  .sidebar-logo {
+    display: none;
   }
-  &__outer-current {
-    background: $royalblue;
-    a:link, a:visited {
-      color: white;
+  .sidebar-list {
+    padding-top: 18px;
+    a {
+      padding-left: 20px;
+      text-decoration: none;
+      font-size: 2vh;
     }
-  }
-  &__outer {
-    a:link, a:visited {
-      color: $blueash;
+    &__outer-current {
+      background: $royalblue;
+      a:link, a:visited {
+        color: white;
+      }
     }
-    a:hover, a:active {
-      color: red;
+    &__outer {
+      a:link, a:visited {
+        color: $blueash;
+      }
+      a:hover, a:active {
+        color: red;
+      }
     }
-  }
-  &__country-image {
-    width: 18px;
-    height: 21px;
-    padding-bottom: 3px;
+    &__country-image {
+      width: 54px;
+      height: 63px;
+      padding-bottom: 10px;
+    }
   }
 }
