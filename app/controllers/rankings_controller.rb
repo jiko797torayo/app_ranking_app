@@ -11,7 +11,7 @@ class RankingsController < ApplicationController
     end
     respond_to do |format|
       format.html do
-        @countries = Country.all.order(name: :asc)
+        @countries = Country.order(name: :asc)
       end
       format.csv do
         file_name = File.basename("#{Time.zone.today.strftime('%Y%m%d')}_#{Country.find_by(code: @current_country).name.underscore}_#{@current_product.underscore}_#{@current_type.underscore}_ranking.csv")
@@ -22,7 +22,7 @@ class RankingsController < ApplicationController
     end
   end
 
-  protected
+  private
 
   def get_products_ranking_data(country:, product:, type:, limit:)
     uri = URI.parse("https://rss.itunes.apple.com/api/v1/#{country}/#{product}/#{type}/all/#{limit}/explicit.json")
