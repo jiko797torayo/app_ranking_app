@@ -4,7 +4,7 @@ class RankingsController < ApplicationController
   before_action :set_current_condition, only: [:index]
 
   def index
-    @products = get_products_ranking_data(country: @current_country, product: @current_product, type: @current_type, limit: 200)
+    @products = get_products_ranking_data(country: @current_country, product: @current_product, type: @current_type)
   rescue JSON::ParserError
     @products = []
   ensure
@@ -13,8 +13,8 @@ class RankingsController < ApplicationController
 
   private
 
-  def get_products_ranking_data(country:, product:, type:, limit:)
-    uri = URI.parse("https://rss.itunes.apple.com/api/v1/#{country}/#{product}/#{type}/all/#{limit}/explicit.json")
+  def get_products_ranking_data(country:, product:, type:)
+    uri = URI.parse("https://rss.itunes.apple.com/api/v1/#{country}/#{product}/#{type}/all/200/explicit.json")
     json = Net::HTTP.get(uri)
     JSON.parse(json)['feed']['results']
   end
