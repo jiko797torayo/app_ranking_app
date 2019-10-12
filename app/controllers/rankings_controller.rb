@@ -4,11 +4,10 @@ class RankingsController < ApplicationController
   before_action :set_current_condition, only: [:index]
 
   def index
-    begin
-      @products = get_products_ranking_data(country: @current_country, product: @current_product, type: @current_type, limit: 200)
-    rescue JSON::ParserError
-      @products = []
-    end
+    @products = get_products_ranking_data(country: @current_country, product: @current_product, type: @current_type, limit: 200)
+  rescue JSON::ParserError
+    @products = []
+  ensure
     @countries = Country.order(name: :asc)
   end
 
