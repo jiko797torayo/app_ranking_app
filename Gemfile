@@ -14,7 +14,6 @@ gem 'mini_racer', platforms: :ruby
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'bootstrap-sass'
-gem 'turbolinks'
 gem 'font-awesome-sass'
 gem 'config'
 gem 'webpacker'
