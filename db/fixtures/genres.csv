@@ -1,0 +1,142 @@
+1,4401,Action & Adventure,movies
+2,4402,Anime,movies
+3,4403,Classics,movies
+4,4404,Comedy,movies
+5,4405,Documentary,movies
+6,4406,Drama,movies
+7,4407,Foreign,movies
+8,4408,Horror,movies
+9,4409,Independent,movies
+10,4410,Kids & Family,movies
+11,4411,Musicals,movies
+12,4412,Romance,movies
+13,4413,Sci-Fi & Fantasy,movies
+14,4414,Short Films,movies
+15,4415,Special Interest,movies
+16,4416,Thriller,movies
+17,4417,Sports,movies
+18,4418,Western,movies
+19,4419,Urban,movies
+20,4420,Holiday,movies
+21,4421,Made for TV,movies
+22,4422,Concert Films,movies
+23,4423,Music Documentaries,movies
+24,4424,Music Feature Films,movies
+25,4425,Japanese Cinema,movies
+26,4426,Jidaigeki,movies
+27,4427,Tokusatsu,movies
+28,4428,Korean Cinema,movies
+29,2,Blues,music
+30,3,Comedy,music
+31,4,Children’s Music,music
+32,5,Classical,music
+33,6,Country,music
+34,7,Electronic,music
+35,8,Holiday,music
+36,9,Opera,music
+37,10,Singer/Songwriter,music
+38,11,Jazz,music
+39,12,Latino,music
+40,13,New Age,music
+41,14,Pop,music
+42,15,R&B/Soul,music
+43,16,Soundtrack,music
+44,17,Dance,music
+45,18,Hip-Hop/Rap,music
+46,19,World,music
+47,20,Alternative,music
+48,21,Rock,music
+49,22,Christian & Gospel,music
+50,23,Vocal,music
+51,24,Reggae,music
+52,25,Easy Listening,music
+53,27,J-Pop,music
+54,28,Enka,music
+55,29,Anime,music
+56,30,Kayokyoku,music
+57,50,Fitness & Workout,music
+58,51,K-Pop,music
+59,52,Karaoke,music
+60,53,Instrumental,music
+61,6000,Business,ios_apps
+62,6001,Weather,ios_apps
+63,6002,Utilities,ios_apps
+64,6003,Travel,ios_apps
+65,6004,Sports,ios_apps
+66,6005,Social Networking,ios_apps
+67,6006,Reference,ios_apps
+68,6007,Productivity,ios_apps
+69,6008,Photo & Video,ios_apps
+70,6009,News,ios_apps
+71,6010,Navigation,ios_apps
+72,6011,Music,ios_apps
+73,6012,Lifestyle,ios_apps
+74,6013,Health & Fitness,ios_apps
+75,6014,Games,ios_apps
+76,6015,Finance,ios_apps
+77,6016,Entertainment,ios_apps
+78,6017,Education,ios_apps
+79,6018,Books,ios_apps
+80,6020,Medical,ios_apps
+81,6021,Newsstand,ios_apps
+82,6022,Catalogs,ios_apps
+83,74,News,audiobooks
+84,75,Programs & Performances,audiobooks
+85,50000040,Fiction,audiobooks
+86,50000041,Arts & Entertainment,audiobooks
+87,50000042,Biography & Memoir,audiobooks
+88,50000043,Business,audiobooks
+89,50000044,Kids & Young Adults,audiobooks
+90,50000045,Classics,audiobooks
+91,50000046,Comedy,audiobooks
+92,50000047,Drama & Poetry,audiobooks
+93,50000048,Speakers & Storytellers,audiobooks
+94,50000049,History,audiobooks
+95,50000050,Languages,audiobooks
+96,50000051,Mystery,audiobooks
+97,50000052,Nonfiction,audiobooks
+98,50000053,Religion & Spirituality,audiobooks
+99,50000054,Science,audiobooks
+100,50000055,Sci-Fi & Fantasy,audiobooks
+101,50000056,Self Development,audiobooks
+102,50000057,Sports,audiobooks
+103,50000058,Technology,audiobooks
+104,50000059,Travel & Adventure,audiobooks
+105,50000069,Romance,audiobooks
+106,50000070,Audiobooks Latino,audiobooks
+107,9008,Biographies & Memoirs,books
+108,9009,Business & Personal Finance,books
+109,9010,Children & Teens,books
+110,9012,Humor,books
+111,9015,History,books
+112,9018,Religion & Spirituality,books
+113,9019,Science & Nature,books
+114,9020,Sci-Fi & Fantasy,books
+115,9024,Lifestyle & Home,books
+116,9025,"Health, Mind & Body",books
+117,9026,Comics & Graphic Novels,books
+118,9027,Computers & Internet,books
+119,9028,"Cookbooks, Food & Wine",books
+120,9029,Professional & Technical,books
+121,9030,Parenting,books
+122,9031,Fiction & Literature,books
+123,9032,Mysteries & Thrillers,books
+124,9033,Reference,books
+125,9034,Politics & Current Events,books
+126,9035,Sports & Outdoors,books
+127,40000001,Business,itunes_u
+128,40000009,Engineering,itunes_u
+129,40000016,Art & Architecture,itunes_u
+130,40000026,Health & Medicine,itunes_u
+131,40000041,History,itunes_u
+132,40000053,Communications & Media,itunes_u
+133,40000054,Philosophy,itunes_u
+134,40000055,Religion & Spirituality,itunes_u
+135,40000056,Language,itunes_u
+136,40000070,Literature,itunes_u
+137,40000077,Mathematics,itunes_u
+138,40000084,Science,itunes_u
+139,40000094,Psychology & Social Science,itunes_u
+140,40000101,Society,itunes_u
+141,40000109,Teaching & Learning,itunes_u
+142,40000140,Law & Politics,itunes_u

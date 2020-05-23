@@ -17,6 +17,7 @@ gem 'bootstrap-sass'
 gem 'font-awesome-sass'
 gem 'config'
 gem 'webpacker'
+gem 'seed-fu'
 
 group :development, :test do
   gem 'rspec-rails'
