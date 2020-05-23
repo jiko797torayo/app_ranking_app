@@ -4,7 +4,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.7.1'
 
 gem 'rails'
-gem "mysql2"
+gem 'mysql2', group: [:development, :test]
+gem 'pg', group: :production
 gem 'puma'
 gem 'sass-rails'
 gem 'uglifier'
