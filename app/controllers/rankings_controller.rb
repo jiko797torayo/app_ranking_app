@@ -3,6 +3,13 @@ class RankingsController < ApplicationController
   layout 'rankings'
 
   def index
+    @current_country = if params[:country] 
+                         params[:country]
+                       else
+                         'US'
+                       end
+    @current_product = params[:product] || 'ios-apps'
+    @current_type = params[:type] || 'top-free'
     @products = products(current_condition)
   rescue JSON::ParserError
     @products = []
@@ -19,14 +26,6 @@ class RankingsController < ApplicationController
   end
 
   def current_condition
-    @current_country = if params[:country] 
-                         params[:country]
-                       else
-                         'US'
-                       end
-    @current_product = params[:product] || 'ios-apps'
-    @current_type = params[:type] || 'top-free'
-
     {
       country: @current_country,
       product: @current_product,
