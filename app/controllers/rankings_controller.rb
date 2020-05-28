@@ -19,7 +19,11 @@ class RankingsController < ApplicationController
   end
 
   def current_condition
-    @current_country = params[:country] || 'US'
+    @current_country = if params[:country] 
+                         params[:country]
+                       else
+                         'US'
+                       end
     @current_product = params[:product] || 'ios-apps'
     @current_type = params[:type] || 'top-free'
 
