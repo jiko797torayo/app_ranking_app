@@ -8,6 +8,15 @@
     <%= favicon_link_tag %>
     <%= stylesheet_link_tag    'rankings', media: 'all' %>
     <%= javascript_include_tag 'application' %>
+    <meta name="description" content="iOSアプリをはじめとするAppleコンテンツの最新ランキングを、国ごとに確認できるサービスです。">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@jiko797torayo" />
+    <meta property="og:url" content="<%= request.url %>">
+    <meta property="og:title" content="App Ranking App">
+    <meta property="og:description" content="iOSアプリをはじめとするAppleコンテンツの最新ランキングを、国ごとに確認できるサービスです。">
+    <meta property="og:image" content="https:<%= image_url 'og_image.png' %>">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="App Ranking App">
   </head>
 
   <body>
