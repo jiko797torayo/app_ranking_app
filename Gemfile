@@ -19,6 +19,7 @@ gem 'font-awesome-sass'
 gem 'config'
 gem 'webpacker'
 gem 'seed-fu'
+gem 'google-analytics-rails'
 
 group :development, :test do
   gem 'rspec-rails'

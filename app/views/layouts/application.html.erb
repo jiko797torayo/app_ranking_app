@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>AppRankingApp</title>
+    <title>App Ranking App</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', debug: true,  media: 'all' %>
     <%= javascript_include_tag 'application', debug: true %>
+    <%= analytics_init if Rails.env.production? %>
   </head>
 
   <body>

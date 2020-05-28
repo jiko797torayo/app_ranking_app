@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>AppRankingApp</title>
+    <title>App Ranking App</title>
+    <%= analytics_init if Rails.env.production? %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= favicon_link_tag %>
