@@ -33,5 +33,9 @@
   </div>
   <p class='ranking-header__title'>
     <%= Settings.rankings.public_send(current_product.underscore).public_send(current_type.underscore).title %>
+    <%= link_to rankings_path(country: current_country, product: current_product, type: current_type, format: :csv), class: 'ranking-header-btn' do %>
+      <i class="fas fa-file-download"></i>
+      <span class='ranking-header-btn__text'>csv</span>
+    <% end %>
   </p>
 </div>
