@@ -16,6 +16,7 @@ module AppRankingApp
   class Application < Rails::Application
     config.load_defaults 5.2
     config.generators.system_tests = nil
+    config.autoload_paths += %W("#{config.root}/lib" "#{config.root}/lib/extensions")
     config.generators do |g|
       g.test_framework :rspec,
         view_specs: false,
