@@ -17,7 +17,7 @@ class RankingsController < ApplicationController
       format.csv do
         file_name = File.basename("#{Time.zone.today.strftime('%Y%m%d')}_#{Country.find_by(code: @current_country).name.underscore}_#{@current_product.underscore}_#{@current_type.underscore}_ranking.csv")
         send_data @products.make_ranking_csv(@current_product),
-                  type: 'text/csv; charset=shift_jis',
+                  type: 'text/csv; charset=utf-8',
                   filename: file_name
       end
     end
