@@ -211,7 +211,6 @@ GEM
     parallel (1.19.1)
     parser (2.7.1.2)
       ast (~> 2.4.0)
-    pg (1.2.3)
     pluginator (1.5.0)
     pre-commit (0.39.0)
       pluginator (~> 1.5)
@@ -383,7 +382,6 @@ DEPENDENCIES
   listen
   mini_racer
   mysql2
-  pg
   pre-commit
   pry-byebug
   pry-doc
