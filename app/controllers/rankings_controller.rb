@@ -14,7 +14,7 @@ class RankingsController < ApplicationController
       end
       format.csv do
         file_name = csv_filename(current_condition)
-        send_data @products.make_ranking_csv(@current_product),
+        send_data @products.make_ranking_csv,
                   type: 'text/csv; charset=utf-8',
                   filename: file_name
       end
