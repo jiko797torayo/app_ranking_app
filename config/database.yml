@@ -16,6 +16,6 @@ test:
 
 production:
   <<: *default
-  adapter: postgresql
-  database: db/production.postgresql
-  url: <%= ENV['DATABASE_URL'] %>
+  database: app_ranking_app_production
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket:   /var/lib/mysql/mysql.sock
