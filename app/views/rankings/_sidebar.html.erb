@@ -7,14 +7,14 @@
     <% countries.each do |country| %>
       <% if country.code == current_country %>
         <p class='sidebar-list__outer-current'>
-          <%= link_to rankings_path(country: country.code, product: current_product, type: current_type), class: 'sidebar-list__country-name' do %>
+          <%= link_to rankings_path(country: country.code, product: current_product, type: current_type, genre: current_genre), class: 'sidebar-list__country-name' do %>
             <%= image_tag "flags/#{country.code}.png", class: 'sidebar-list__country-image' %>
             <span><%= country.name %></span>
           <% end %>
         </p>
       <% else %>
         <p class='sidebar-list__outer'>
-          <%= link_to rankings_path(country: country.code, product: current_product, type: current_type), class: 'sidebar-list__country-name' do %>
+          <%= link_to rankings_path(country: country.code, product: current_product, type: current_type, genre: current_genre), class: 'sidebar-list__country-name' do %>
             <%= image_tag "flags/#{country.code}.png", class: 'sidebar-list__country-image' %>
             <span><%= country.name %></span>
           <% end %>

@@ -9,6 +9,12 @@
         <%= link_to Settings.rankings.ios_apps.top_paid.title, rankings_path(country: current_country, product: 'ios-apps', type: 'top-paid') %>
       </li>
       <li class='ranking-header-link__item'>
+        <%= link_to Settings.rankings.ios_games.top_free.title, rankings_path(country: current_country, product: 'ios-apps', type: 'top-free', genre: 'games') %>
+      </li>
+      <li class='ranking-header-link__item'>
+        <%= link_to Settings.rankings.ios_games.top_paid.title, rankings_path(country: current_country, product: 'ios-apps', type: 'top-paid', genre: 'games') %>
+      </li>
+      <li class='ranking-header-link__item'>
         <%= link_to Settings.rankings.itunes_music.top_songs.title, rankings_path(country: current_country, product: 'itunes-music', type: 'top-songs') %>
       </li>
       <li class='ranking-header-link__item'>

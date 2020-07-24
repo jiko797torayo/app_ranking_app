@@ -27,23 +27,25 @@ class RankingsController < ApplicationController
     @current_country = params[:country] || 'US'
     @current_product = params[:product] || 'ios-apps'
     @current_type = params[:type] || 'top-free'
+    @current_genre = params[:genre] || 'all'
   end
 
   def current_condition 
     {
       country: @current_country,
+      product: @current_product,
       type: @current_type,
-      product: @current_product
+      genre: @current_genre
     }
   end
 
-  def products(country:, product:, type:)
-    uri = URI.parse("https://rss.itunes.apple.com/api/v1/#{country}/#{product}/#{type}/all/200/explicit.json")
+  def products(country:, product:, type:, genre:)
+    uri = URI.parse("https://rss.itunes.apple.com/api/v1/#{country}/#{product}/#{type}/#{genre}/200/explicit.json")
     json = Net::HTTP.get(uri)
     JSON.parse(json)['feed']['results']
   end
 
-  def csv_filename(country:, product:, type:)
-    File.basename("#{Time.zone.today.strftime('%Y%m%d')}_#{country}_#{type}_#{product}_ranking.csv".underscore)
+  def csv_filename(country:, product:, type:, genre:)
+    File.basename("#{Time.zone.today.strftime('%Y%m%d')}_#{country}_#{product}_#{type}_#{genre}_ranking.csv".underscore)
   end
 end

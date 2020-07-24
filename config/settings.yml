@@ -1,26 +1,31 @@
 rankings:
   ios_apps:
     top_free:
-      title: 'iOS Apps Top Free Ranking'
+      title: 'Top Free iOS Apps'
     top_paid:
-      title: 'iOS Apps Top Paid Ranking'
+      title: 'Top Paid iOS Apps'
+  ios_games:
+    top_free:
+      title: 'Top Free iOS Games'
+    top_paid:
+      title: 'Top Paid iOS Games'
   itunes_music:
     top_songs:
-      title: 'iTunes Music Top Songs Ranking'
+      title: 'Top iTunes Music'
   apple_music:
     top_songs:
-      title: 'Apple Music Top Songs Ranking'
+      title: 'Top Apple Music'
   audiobooks:
     top_audiobooks:
-      title: 'Audiobooks Top Audiobooks Ranking'
+      title: 'Top Audiobooks'
   books:
     top_free:
-      title: 'Books Top Free Ranking'
+      title: 'Top Free Books'
     top_paid:
-      title: 'Books Top Paid Ranking'
+      title: 'Top Paid Books'
   movies:
     top_movies:
-      title: 'Movies Top Movies Ranking'
+      title: 'Top Movies'
   itunes_u:
     top_itunes_u_courses:
-      title: 'iTunes U Top iTunes U Courses Ranking'
+      title: 'Top iTunes U Courses'

@@ -1,6 +1,6 @@
-<%= render partial: 'rankings/sidebar', locals: { countries: @countries, current_country: @current_country, current_product: @current_product, current_type: @current_type } %>
+<%= render partial: 'rankings/sidebar', locals: { countries: @countries, current_country: @current_country, current_product: @current_product, current_type: @current_type, current_genre: @current_genre } %>
 <section class='ranking'>
-  <%= render partial: 'rankings/header', locals: { current_country: @current_country, current_product: @current_product, current_type: @current_type } %>
+  <%= render partial: 'rankings/header', locals: { current_country: @current_country, current_product: @current_product, current_type: @current_type, current_genre: @current_genre } %>
   <%= render partial: 'rankings/content', locals: { products: @products, current_product: @current_product } %>
 </section>
 <footer>
