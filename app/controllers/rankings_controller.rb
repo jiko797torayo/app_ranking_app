@@ -3,11 +3,7 @@ class RankingsController < ApplicationController
   layout 'rankings'
 
   def index
-    @current_country = if params[:country] 
-                         params[:country]
-                       else
-                         'US'
-                       end
+    @current_country = params[:country] || 'US'
     @current_product = params[:product] || 'ios-apps'
     @current_type = params[:type] || 'top-free'
     @products = products(current_condition)
